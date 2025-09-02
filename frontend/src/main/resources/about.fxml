@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" >
+    <Pane fx:id="aboutPane" prefHeight="86.0" prefWidth="270">
+        <Label fx:id="name" text="%label.name" layoutX="11.0" layoutY="13.0" prefHeight="17.0" prefWidth="249.0" />
+        <Label fx:id="version" text="%label.version" layoutX="11.0" layoutY="30.0" prefHeight="17.0" prefWidth="249.0" />
+        <Label fx:id="date" text="%label.date" layoutX="11.0" layoutY="47.0" prefHeight="17.0" prefWidth="249.0" />
+        <Label fx:id="nameDevelopers" text="%label.nameDevelopers" layoutX="11.0" layoutY="64.0" prefHeight="17.0" prefWidth="258.0" />
+    </Pane>
+</AnchorPane>

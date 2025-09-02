@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.supsi.imageeditor.frontend.dispatcher.MenuBarDispatcher"
+      prefWidth="300.0" maxWidth="300.0">
+
+    <Label alignment="CENTER" contentDisplay="CENTER"
+           style="-fx-font-size: 16px;" text="%label.pipeline" textAlignment="CENTER" />
+
+    <!-- Create an HBox to place the buttons next to each other -->
+    <HBox spacing="10" alignment="CENTER" HBox.hgrow="ALWAYS">
+        <!-- Transformations button placed here -->
+        <Button fx:id="playButton" text="▶" onAction="#doTransformations"
+                style="-fx-font-size: 20px; -fx-background-color: #4CAF50; -fx-text-fill: white;"
+                HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+
+        <!-- Delete All button with Unicode Trash icon -->
+        <Button fx:id="deleteButton" text="X" onAction="#deleteAllElements" alignment="CENTER"
+                style="-fx-font-size: 20px; -fx-background-color: #FF6347; -fx-font-weight: bold;-fx-text-fill: white;"
+                HBox.hgrow="ALWAYS" maxWidth="Infinity" />
+    </HBox>
+
+    <ListView fx:id="pipelineListView" VBox.vgrow="ALWAYS" />
+</VBox>

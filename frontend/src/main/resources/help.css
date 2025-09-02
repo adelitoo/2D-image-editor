@@ -1,0 +1,53 @@
+/* help.css */
+
+/* Styling the VBox container */
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20;
+    -fx-border-width: 2;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 2);
+}
+
+/* Styling the TextArea */
+.rules-textarea {
+    -fx-background-color: #ffffff;
+    -fx-font-size: 16px; /* Slightly larger font */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-border-color: #b3b3b3;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 15; /* Added more padding */
+    -fx-text-fill: #333333; /* Darker text for better contrast */
+    -fx-line-spacing: 5px; /* Adds spacing between lines for readability */
+    -fx-wrap-text: true;
+}
+
+/* Styling the Close Button */
+.close-button {
+    -fx-background-color: #0073e6;
+    -fx-text-fill: white;
+    -fx-font-size: 16px; /* Bigger font */
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20; /* Larger padding for bigger button */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0.3, 0, 1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for the Close Button (turns light blue) */
+.close-button:hover {
+    -fx-background-color: lightblue; /* Light blue when hovered */
+    -fx-cursor: hand;
+    -fx-text-fill: #000000; /* Change text color to black for better contrast on light background */
+}
+
+/* Pressed state effect for the Close Button */
+.close-button:pressed {
+    -fx-background-color: #003f7d;
+    -fx-text-fill: white;
+}

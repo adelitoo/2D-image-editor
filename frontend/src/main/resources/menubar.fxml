@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<MenuBar xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.supsi.imageeditor.frontend.dispatcher.MenuBarDispatcher">
+    <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+        <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#openFile" text="%label.openFile"/>
+        <SeparatorMenuItem mnemonicParsing="false"/>
+        <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" onAction="#saveFile" text="%label.saveFile" disable="true"/>
+        <MenuItem fx:id="saveAsMenuItem" mnemonicParsing="false" onAction="#saveFileAs" text="%label.saveAsFile" disable="true"/>
+        <SeparatorMenuItem mnemonicParsing="false"/>
+        <MenuItem fx:id="quitMenuItem" mnemonicParsing="false" onAction="#quitApplication" text="%label.quit"/>
+    </Menu>
+
+    <Menu fx:id="editMenu" mnemonicParsing="false" text="%label.edit">
+        <Menu fx:id="preferencesMenu" mnemonicParsing="false" text="%label.preference">
+            <Menu fx:id="languageMenu" mnemonicParsing="false" text="%label.languages">
+                <MenuItem fx:id="englishMenuItem" mnemonicParsing="false" text="%label.english" onAction="#setLanguageEnglish"/>
+                <MenuItem fx:id="frenchMenuItem" mnemonicParsing="false" text="%label.french" onAction="#setLanguageFrench"/>
+                <MenuItem fx:id="germanMenuItem" mnemonicParsing="false" text="%label.german" onAction="#setLanguageGerman"/>
+                <MenuItem fx:id="italianMenuItem" mnemonicParsing="false" text="%label.italian" onAction="#setLanguageItalian"/>
+                <MenuItem fx:id="espanolMenuItem" mnemonicParsing="false" text="%label.espanol" onAction="#setLanguageEspanol"/>
+            </Menu>
+        </Menu>
+    </Menu>
+
+    <Menu fx:id="helpMenu" mnemonicParsing="false" text="%label.help2">
+        <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#showAbout" text="%label.about"/>
+        <MenuItem fx:id="helpMenuItem" mnemonicParsing="false" onAction="#showHelp" text="%label.help2"/>
+    </Menu>
+</MenuBar>

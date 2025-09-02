@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10" style="-fx-background-color: #f0f0f0;">
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS">
+        <StackPane fx:id="stackPane" prefWidth="400" prefHeight="400" maxWidth="Infinity" maxHeight="Infinity"/>
+    </ScrollPane>
+</VBox>

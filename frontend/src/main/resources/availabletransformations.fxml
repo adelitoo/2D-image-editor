@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxWidth="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.supsi.imageeditor.frontend.dispatcher.MenuBarDispatcher">
+
+    <Label fx:id="transformationLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" style="-fx-font-size: 16px;" text="%label.transformation" textAlignment="CENTER" />
+
+    <ListView fx:id="transformationsListView" VBox.vgrow="ALWAYS">
+        <Label fx:id="upsideDown" onMouseClicked="#handleFlipUpsideDownClick" prefHeight="17.0" prefWidth="270.0" text="%label.flipUpsideDown" />
+        <Label fx:id="sideToSide" onMouseClicked="#handleFlipSideToSideClick" prefHeight="17.0" prefWidth="270.0" text="%label.flipSideToSide" />
+        <Label fx:id="rotateClockWise" onMouseClicked="#handleRotateClockwiseClick" prefHeight="17.0" prefWidth="270.0" text="%label.rotateClockwise" />
+        <Label fx:id="negative" onMouseClicked="#handleNegativeClick" prefHeight="17.0" prefWidth="270.0" text="%label.negative" />
+        <Label fx:id="rotateAntiClockWise" onMouseClicked="#handleRotateAntiClockwiseClick" prefHeight="17.0" prefWidth="270.0" text="%label.rotateAntiClockwise" />
+    </ListView>
+</VBox>
