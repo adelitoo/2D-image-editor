@@ -58,11 +58,11 @@ Notable design features:
 
 1. Clone the repository:
    ```bash
-   [git clone https://github.com/antoniomarroffino/2D-Image-Editor.git](https://github.com/adelitoo/2D-image-editor.git)
+   git clone https://github.com/adelitoo/2D-image-editor.git
    ```
 2. Navigate into the project folder:
    ```bash
-   cd 2D-Image-Editor
+   cd 2D-image-editor
    ```
 3. Build and run the application:
    ```bash
